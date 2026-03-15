@@ -1,0 +1,29 @@
+version: 2
+
+builds:
+  - env:
+      - CGO_ENABLED=0
+    goos:
+      - linux
+      - darwin
+      - windows
+    goarch:
+      - amd64
+      - arm64
+    ldflags:
+      - -s -w -X main.version={{.Version}}
+
+archives:
+  - format_overrides:
+      - goos: windows
+        format: zip
+
+brews:
+  - repository:
+      owner: kakakakakku
+      name: homebrew-tap
+    homepage: https://github.com/kakakakakku/tfprune
+    description: A CLI tool to remove old Terraform provider versions
+
+changelog:
+  sort: asc
