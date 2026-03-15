@@ -22,6 +22,7 @@ brews:
   - repository:
       owner: kakakakakku
       name: homebrew-tap
+      token: "{{ .Env.HOMEBREW_TAP_GITHUB_TOKEN }}"
     homepage: https://github.com/kakakakakku/tfprune
     description: A CLI tool to remove old Terraform provider versions
 
