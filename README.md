@@ -6,6 +6,14 @@ Terraform does not clean up old provider versions when you upgrade. Over time, t
 
 ## Install
 
+**homebrew tap:**
+
+```sh
+$ brew install kakakakakku/tap/tfprune
+```
+
+**go install:**
+
 ```sh
 $ go install github.com/kakakakakku/tfprune@latest
 ```
