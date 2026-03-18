@@ -4,6 +4,8 @@ A CLI tool to remove old Terraform provider versions from `.terraform/providers/
 
 Terraform does not clean up old provider versions when you upgrade. Over time, this can consume significant disk space. `tfprune` compares the installed providers against `.terraform.lock.hcl` and removes versions that are no longer needed.
 
+![demo](images/demo.png)
+
 ## Install
 
 **homebrew tap:**
